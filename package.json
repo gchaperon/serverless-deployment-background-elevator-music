@@ -1,10 +1,19 @@
 {
   "name": "serverless-deployment-background-music",
-  "version": "1.0.0",
   "description": "Play elevator music while deploying",
+  "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gchaperon/serverless-deployment-background-elevator-music.git"
+  },
+  "keywords": ["serverless", "deploy", "music", "meme"],
   "author": "Gabriel Chaperon <gabrielchaperonb@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gchaperon/serverless-deployment-background-elevator-music/issues"
+  },
+  "homepage": "https://github.com/gchaperon/serverless-deployment-background-elevator-music",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.2",
     "lame": "^1.2.4",
