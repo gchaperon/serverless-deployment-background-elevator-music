@@ -1,6 +1,6 @@
 {
   "name": "serverless-deployment-background-music",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Play elevator music while deploying",
   "main": "index.js",
   "author": "gabrielchaperonb@gmail.com",
