@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Play elevator music while deploying",
   "main": "index.js",
-  "author": "gabrielchaperonb@gmail.com",
+  "author": "Gabriel Chaperon <gabrielchaperonb@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.2",
