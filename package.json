@@ -1,0 +1,14 @@
+{
+  "name": "serverless-deployment-background-music",
+  "version": "0.0.1",
+  "description": "Play elevator music while deploying",
+  "main": "index.js",
+  "author": "gabrielchaperonb@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "lame": "^1.2.4",
+    "speaker": "^0.4.1",
+    "youtube-audio-stream": "^0.3.0"
+  }
+}
