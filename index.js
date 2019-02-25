@@ -3,7 +3,7 @@ const youtubeStream = require('youtube-audio-stream')
 const Decoder = require('lame').Decoder
 const Speaker = require('speaker')
 
-const url = 'https://www.youtube.com/watch?v=6P2_w8fAu4c'
+const url = 'https://youtu.be/VBlFHuCzPgY'
 
 class BackgroundMusicPlugin {
   constructor(serverless, options) {
