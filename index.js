@@ -1,7 +1,6 @@
 'use strict';
 var player = require('play-sound')(opts = {})
 
-
 class BackgroundMusicPlugin {
   constructor(serverless, options) {
     this.serverless = serverless;
