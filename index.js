@@ -1,5 +1,5 @@
 'use strict';
-var player = require('play-sound')(opts = {})
+var player = require('play-sound')({})
 
 class BackgroundMusicPlugin {
   constructor(serverless, options) {
@@ -34,7 +34,7 @@ class BackgroundMusicPlugin {
     this.hooks = {
       'music:start:startStream': this.startStream.bind(this),
       'before:package:cleanup': this.beforePackageCleanup.bind(this),
-      'after:deploy:deploy': this.afterDeployDeploy.bind(this),
+      'after:deploy:finalize': this.afterDeployDeploy.bind(this),
       'music:stop:stopStream': this.stopStream.bind(this),
       'music:validate' : this.validate.bind(this),
       'music:start:validate' : this.validate.bind(this),
@@ -55,9 +55,9 @@ class BackgroundMusicPlugin {
 
   startStream() {
     this.serverless.cli.log('Cue the music!');
-    this.stream = youtubeStream(url)
-      .pipe(new Decoder())
-      .pipe(new Speaker())
+    this.audio = player.play(__dirname + '/assets/foo.mp3', function(err){
+      if (err) throw err
+    })
   }
 
   afterDeployDeploy() {
@@ -66,7 +66,7 @@ class BackgroundMusicPlugin {
 
   stopStream() {
     this.serverless.cli.log('Stop the music :(');
-    this.stream.destroy()
+    this.audio.kill()
   }
 }
 

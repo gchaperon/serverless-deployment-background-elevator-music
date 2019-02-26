@@ -20,10 +20,6 @@
   },
   "homepage": "https://github.com/gchaperon/serverless-deployment-background-elevator-music",
   "dependencies": {
-    "fluent-ffmpeg": "^2.1.2",
-    "lame": "^1.2.4",
-    "play-sound": "^1.1.3",
-    "speaker": "^0.4.1",
-    "youtube-audio-stream": "^0.3.0"
+    "play-sound": "^1.1.3"
   }
 }
