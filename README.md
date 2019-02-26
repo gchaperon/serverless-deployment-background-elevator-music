@@ -1,7 +1,5 @@
-# serverless-deployment-background-music
+# serverless-deployment-background-elevator-music
 Oi! Bored while deployin'? Serverless taking too long? Your net is shit? Then this plugin is for you! It plays elevator music in the background while deploying :)
-It streams the audio from [this](https://www.youtube.com/watch?v=6P2_w8fAu4c) video, so your net can be the shittiest of 'em all :)
 
 ### Requirements
-* you need to have [ffmpeg](https://www.ffmpeg.org/download.html) installed!
-* install ytdl globally: `npm install -g ytdl`
+* you might need to install [ffmpeg](https://www.ffmpeg.org/download.html)!

@@ -1,9 +1,6 @@
 'use strict';
-const youtubeStream = require('youtube-audio-stream')
-const Decoder = require('lame').Decoder
-const Speaker = require('speaker')
+var player = require('play-sound')(opts = {})
 
-const url = 'https://www.youtube.com/watch?v=6P2_w8fAu4c'
 
 class BackgroundMusicPlugin {
   constructor(serverless, options) {
